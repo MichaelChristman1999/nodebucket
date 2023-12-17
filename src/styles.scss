@@ -1,0 +1,39 @@
+/* Importing the theme stylesheet */
+@import "custom-theme.scss";
+
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,500;0,600;0,700;1,500;1,600;1,700&display=swap");
+
+body,
+html {
+  margin: 0;
+  padding: 0;
+  font-family: "Poppins", sans-serif !important;
+}
+
+footer {
+  background-color: #222f5b;
+  flex-shrink: 0;
+}
+
+.mat-mdc-snack-bar-container {
+  --mat-mdc-snack-bar-button-color: #ffffff;
+  --mdc-snackbar-supporting-text-color: #ffffff;
+
+  &.app-notification-error {
+    --mdc-snackbar-container-color: #f23a2f;
+  }
+
+  &.app-notification-success {
+    --mdc-snackbar-container-color: #222f5b;
+    text-align: center;
+  }
+}
+
+.mdc-dialog__title {
+  color: #946b2d !important;
+  font-weight: 600 !important;
+}
+
+.mdc-dialog__content {
+  color: #222f5b !important;
+}

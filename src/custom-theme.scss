@@ -1,0 +1,19 @@
+@use "@angular/material" as mat;
+
+@include mat.core();
+
+$nodebucket-primary: mat.define-palette(mat.$indigo-palette, 900);
+$nodebucket-accent: mat.define-palette(mat.$brown-palette, 400);
+$nodebucket-warn: mat.define-palette(mat.$red-palette);
+
+$nodebucket-theme: mat.define-light-theme(
+  (
+    color: (
+      primary: $nodebucket-primary,
+      accent: $nodebucket-accent,
+      warn: $nodebucket-warn,
+    ),
+  )
+);
+
+@include mat.all-component-themes($nodebucket-theme);
